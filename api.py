@@ -10,7 +10,6 @@ PASSWORD = 'gr_PW77'
 DATABASE_CONNECTION = f'mssql+pymssql://{USERNAME}:{PASSWORD}@{SERVER}/{DATABASE}'
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
 
 
 @app.route('/', methods=['GET'])
