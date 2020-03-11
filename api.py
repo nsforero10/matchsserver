@@ -68,5 +68,5 @@ def matchs():
     return jsonify({'matchs':
                     list(map(lambda match: match.serialize(), lts))})
 
-
-app.run()
+if __name__ == '__main__':
+    app.run()
